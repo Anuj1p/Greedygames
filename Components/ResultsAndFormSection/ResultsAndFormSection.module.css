@@ -1,7 +1,7 @@
 .mainContainer {
     padding: 60px 100px 0px 100px;
     background-image: url('../../assets/xyz.png');
-    height: calc(100vh - 80px);
+    /* height: calc(100vh - 80px); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -54,6 +54,7 @@
     margin-right: 20px;
     margin-bottom: 20px;
     justify-content: space-around;
+    padding: 10px 0;
 }
 
 .featureContent {
@@ -128,7 +129,6 @@
     opacity: 0.8;
 }
 
-@media screen and (max-width: 1024px) {}
 
 @media screen and (max-width: 1024px) {
     .mainContainer {
@@ -200,6 +200,11 @@
         right: 0px;
         display: flex;
         justify-content: center;
+    }
+
+    .features {
+        margin-right: 0px;
+        margin-bottom: 10px;
     }
 
     .leftContainer {
