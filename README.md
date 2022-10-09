@@ -1,6 +1,6 @@
 Deployment Link - https://greedygames.vercel.app/
 
-***Profile Page***
+***Desktop View***
 ![Profile Page](https://github.com/Anuj1p/Greedygames/blob/main/images/Screenshot%20from%202022-10-10%2001-20-45.png)
 ![Profile Page](https://github.com/Anuj1p/Greedygames/blob/main/images/Screenshot%20from%202022-10-10%2001-20-50.png)
 ![Profile Page](https://github.com/Anuj1p/Greedygames/blob/main/images/Screenshot%20from%202022-10-10%2001-33-37.png)
