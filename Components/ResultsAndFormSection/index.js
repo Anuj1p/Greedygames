@@ -18,22 +18,24 @@ const ResultsAndFormSection = () => {
         const filterEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         const filterMobile = /^\+91[0-9]{10}$/
 
-
+        if (!email.current.value || !mobile.current.value || !revenue) {
+            setError("Fill all necessary fields");
+            return;
+        }
+        setError('')
         if (!filterEmail.test(email.current.value)) {
             setInvalidEmail("Invalid Email Address")
             email.current.focus();
             return;
         }
+        setInvalidEmail('');
         if (!filterMobile.test(mobile.current.value)) {
             setInvalidMobile("Please enter a Valid phone number with country code");
             mobile.current.focus();
             console.log("error");
             return;
         }
-        if (!email.current.value || !mobile.current.value || !revenue) {
-            setError("Fill all necessary fields");
-            return;
-        }
+        
         else {
             setError('');
             setInvalidEmail('');
