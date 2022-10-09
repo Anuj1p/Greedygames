@@ -23,19 +23,28 @@ const ResultsAndFormSection = () => {
             return;
         }
         setError('')
-        if (!filterEmail.test(email.current.value)) {
-            setInvalidEmail("Invalid Email Address")
+        if (!filterEmail.test(email.current.value) && !filterMobile.test(mobile.current.value)) {
+            setInvalidEmail("Invalid Email Address");
+            email.current.focus();
+            setInvalidMobile("Please enter a Valid phone number with country code");
+            mobile.current.focus();
+            return;
+        }
+        else if (!filterMobile.test(mobile.current.value)) {
+            if (filterEmail.test(email.current.value)) {
+                setInvalidEmail('')
+            }
+            setInvalidMobile("Please enter a Valid phone number with country code");
+            mobile.current.focus();
+            return;
+        }
+        else if (!filterEmail.test(email.current.value)) {
+            setInvalidMobile('');
+            setInvalidEmail("Invalid Email Address");
             email.current.focus();
             return;
         }
-        setInvalidEmail('');
-        if (!filterMobile.test(mobile.current.value)) {
-            setInvalidMobile("Please enter a Valid phone number with country code");
-            mobile.current.focus();
-            console.log("error");
-            return;
-        }
-        
+
         else {
             setError('');
             setInvalidEmail('');
