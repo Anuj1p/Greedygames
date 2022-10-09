@@ -1,0 +1,46 @@
+.container {
+    position: sticky;
+    top: 0;
+    padding: 27px 60px;
+    height: 80px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    z-index: 999;
+}
+
+.childContainer {
+    display: flex;
+    align-items: center;
+}
+
+.menuIcon>.line {
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .container  {
+        padding: 27px 20px;
+    }
+    .menuIcon>.line {
+        background-color: #292929;
+        height: 2px;
+        display: block;
+        z-index: 999;
+        width: 20px;
+        margin-right: 20px;
+
+    }
+    
+    .line {
+        margin-bottom: 5px;
+        width: 10px;
+    }
+
+    .line:last-child {
+        margin-bottom: 0px;
+    }
+    
+}
+

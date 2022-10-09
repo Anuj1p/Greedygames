@@ -1,0 +1,297 @@
+.mainContainer {
+    padding: 60px 100px 0px 100px;
+    background-image: url('../../assets/xyz.png');
+    height: calc(100vh - 80px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+}
+
+.leftContainer {
+    width: 50%;
+}
+
+.heading {
+    font-size: 57px;
+    font-weight: bold;
+}
+
+.subHeading {
+    font-size: 57px;
+    padding-bottom: 25px;
+}
+
+.rightContainer {
+    width: 40%;
+    padding: 40px 55px;
+    background-color: #fff;
+    top: 100px;
+    margin-bottom: 30px;
+    position: fixed;
+    z-index: 99999;
+    right: 80px;
+    box-shadow: 0px 16px 50px #C7C7C75F;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+}
+
+.featuresContainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px 0;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    align-items: center;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+
+.featureContent {
+    text-align: center;
+    width: 90%;
+    padding-bottom: 10px;
+}
+
+.image {
+    width: 63px;
+    height: 38px;
+    margin: 10px;
+}
+
+.firstRow {
+    display: flex;
+}
+
+.firstRowComponent {
+    width: 50%;
+}
+
+.firstRowInput {
+    max-width: 220px;
+    min-width: 220px;
+    height: 48px;
+    background: #F9FAFE 0% 0% no-repeat padding-box;
+    border: 1px solid #0F1B4D0F;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.nextRows {
+    margin-top: 30px;
+}
+
+.nextRowsInput {
+    margin-top: 10px;
+    max-width: 480px;
+    min-width: 440px;
+    height: 48px;
+    background: #F9FAFE 0% 0% no-repeat padding-box;
+    border: 1px solid #0F1B4D0F;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+.button {
+    background-color: #126FED;
+    max-width: 480px;
+    min-width: 440px;
+    height: 50px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.terms {
+    padding-top: 20px;
+}
+
+.spanTag {
+    color: #126FED;
+    cursor: pointer;
+}
+
+.errors {
+    color: #EB1414;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 1024px) {
+    .mainContainer {
+        padding-left: 80px;
+    }
+
+    .heading {
+        font-size: 47px;
+        font-weight: bold;
+    }
+
+    .subHeading {
+        font-size: 47px;
+        padding-bottom: 20px;
+    }
+
+    .featureContent {
+        text-align: center;
+        width: 90%;
+        padding: 10px 0;
+    }
+
+    .firstRowInput {
+        max-width: 180px;
+        min-width: 90px;
+    }
+
+    .nextRowsInput {
+        max-width: 380px;
+        min-width: 340px;
+    }
+
+    .button {
+        max-width: 380px;
+        min-width: 340px;
+    }
+
+    .rightContainer {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .mainContainer {
+        height: max-content;
+    }
+
+    .features {
+        width: 100%;
+        align-items: center;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .mainContainer {
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    .rightContainer {
+        width: 100%;
+        padding: 40px 55px;
+        top: 0px;
+        position: relative;
+        z-index: 99;
+        right: 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .leftContainer {
+        width: 100%;
+        left: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mainContainer {
+        padding: 20px;
+    }
+
+    .firstRowInput {
+        max-width: 330px;
+        min-width: 330px;
+    }
+
+    .firstRowComponent {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .firstRowComponent:last-child {
+        margin-bottom: 0px;
+    }
+
+    .nextRowsInput {
+        max-width: 330px;
+        min-width: 330px;
+    }
+
+    .button {
+        max-width: 330px;
+        min-width: 330px;
+    }
+
+    .heading {
+        font-size: 40px;
+    }
+
+    .subHeading {
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+
+    .firstRow {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rightContainer {
+        width: 100%;
+        padding: 40px 25px 20px;
+        top: 0px;
+        position: relative;
+        right: 0px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 378px) {
+    .firstRowInput {
+        max-width: 320px;
+        min-width: 300px;
+    }
+
+    .nextRowsInput {
+        max-width: 320px;
+        min-width: 300px;
+    }
+
+    .button {
+        max-width: 320px;
+        min-width: 300px;
+    }
+}
+
+@media screen and (max-width: 328px) {
+    .firstRowInput {
+        max-width: 320px;
+        min-width: 270px;
+    }
+
+    .nextRowsInput {
+        max-width: 320px;
+        min-width: 270px;
+    }
+
+    .button {
+        max-width: 320px;
+        min-width: 270px;
+    }
+}

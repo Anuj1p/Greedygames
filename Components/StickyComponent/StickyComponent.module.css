@@ -1,0 +1,45 @@
+.mainComponent {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .mainComponent {
+        display: block;
+        position: fixed;
+        z-index: 999;
+        bottom: 0px;
+        box-shadow: 0px 3px 36px #00000029;
+        height: 70px;
+        width: 100%;
+        opacity: 1;
+        background-color: #fff;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: center;
+    }
+
+    .content {
+        padding-right: 20px;
+    }
+
+    .button {
+        background-color: #126FED;
+        color: #fff;
+        border-radius: 6px;
+        padding: 10px 30px;
+    }
+}
+
+@media screen and (max-width: 328px) {
+    .content {
+        padding-right: 10px;
+    }
+
+    .button {
+        padding: 10px 20px;
+    }
+}

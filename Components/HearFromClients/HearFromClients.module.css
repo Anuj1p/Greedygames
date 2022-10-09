@@ -1,0 +1,66 @@
+.mainContainer {
+    background-color: #FFFFFF;
+    padding-left: 100px;
+    padding-top: 64px;
+    padding-bottom: 60px;
+}
+
+.heading {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.container {
+    width: 45%;
+    padding: 40px;
+    box-shadow: 0px 3px 30px #41414115;
+    margin-top: 40px;
+}
+
+.subHeading {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 0;
+}
+
+.content {
+    font-size: 16px;
+    padding-bottom: 35px;
+}
+
+.link {
+    font-size: 19px;
+    color: #126FED;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .mainContainer {
+        padding-left: 80px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .mainContainer {
+        padding: 30px 50px;
+    }
+
+    .container {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mainContainer {
+        padding: 20px;
+    }
+
+    .container {
+        padding: 30px;
+    }
+
+    .heading {
+        font-size: 32px;
+    }
+}

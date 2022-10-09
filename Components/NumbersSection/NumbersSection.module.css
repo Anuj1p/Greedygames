@@ -1,0 +1,118 @@
+.mainContainer {
+    background-image: url('../../assets/numbers.png');
+    height: 220px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    padding-left: 100px;
+}
+
+.leftContainer {
+    position: relative;
+    width: 50%;
+}
+
+.numbersContainer {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-0%, -50%);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.childContainer {
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+}
+
+.childContainer:last-child {
+    padding-right: 0px;
+}
+
+.numbers {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.name {
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 1200px) {
+    .mainContainer {
+        padding-left: 90px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .mainContainer {
+        padding-left: 50px;
+    }
+
+    .childContainer {
+        padding-right: 0px;
+        width: 50%;
+        padding-bottom: 10px;
+    }
+
+    .childContainer:last-child {
+        padding-right: 0px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .mainContainer {
+        padding: 0 50px;
+    }
+
+    .childContainer {
+        padding-right: 50px;
+        width: 25%;
+        padding-bottom: 0px;
+    }
+
+    .leftContainer {
+        position: relative;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mainContainer {
+        padding:  0 20px;
+    }  
+
+    .numbersContainer {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-0%, -50%);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    .childContainer {
+        padding-right: 0px;
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .numbers {
+        font-size: 45px;
+    }
+    
+    .name {
+        font-size: 16px;
+    }
+}
