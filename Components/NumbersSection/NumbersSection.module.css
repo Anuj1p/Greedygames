@@ -88,19 +88,19 @@
 
 @media screen and (max-width: 768px) {
     .mainContainer {
-        padding:  0 20px;
-    }  
+        padding: 0 20px;
+    }
 
     .numbersContainer {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 0%;
-    transform: translate(-0%, -50%);
-    color: white;
-    display: flex;
-    flex-wrap: wrap;
-}
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+    }
 
     .childContainer {
         padding-right: 0px;
@@ -111,8 +111,21 @@
     .numbers {
         font-size: 45px;
     }
-    
+
     .name {
         font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .numbersContainer {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translate(-0%, -50%);
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
     }
 }

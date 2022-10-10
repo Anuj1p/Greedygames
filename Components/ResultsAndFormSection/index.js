@@ -46,7 +46,6 @@ const ResultsAndFormSection = () => {
         }
 
         else {
-            setError('');
             setInvalidEmail('');
             setInvalidMobile('');
             return;

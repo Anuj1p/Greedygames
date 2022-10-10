@@ -1,7 +1,6 @@
 .mainContainer {
     padding: 60px 100px 0px 100px;
     background-image: url('../../assets/xyz.png');
-    /* height: calc(100vh - 80px); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

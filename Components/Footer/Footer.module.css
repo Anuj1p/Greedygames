@@ -13,5 +13,6 @@
 @media screen and (max-width: 768px) {
     .mainContainer {
         padding: 20px;
+        margin-bottom: 70px;
     }
 }
