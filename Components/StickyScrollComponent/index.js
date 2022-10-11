@@ -1,7 +1,7 @@
 import React from 'react'
-import styles from './StickyComponent.module.css';
+import styles from './StickyScrollComponent.module.css';
 
-const StickyComponent = () => {
+const StickyScrollComponent = () => {
 
     const _onCLick = () => {
         window.scrollTo(0,830);
@@ -17,4 +17,4 @@ const StickyComponent = () => {
     );
 }
 
-export default StickyComponent;
+export default StickyScrollComponent;
